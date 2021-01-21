@@ -1,0 +1,5 @@
+flask
+pandas
+gunicorn
+jupyter
+Flask-WTF

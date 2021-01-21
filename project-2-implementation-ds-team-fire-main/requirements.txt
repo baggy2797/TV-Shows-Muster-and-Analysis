@@ -1,0 +1,12 @@
+nltk
+pandas
+numpy
+scipy
+matplotlib
+seaborn
+jupyter
+wordcloud
+textblob
+gensim
+tweet-preprocessor
+pyldavis

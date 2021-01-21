@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Team Fire Visualization</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}" />
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header">
+				<a href="/sentiment" class="title">Reviews</a>
+				&emsp;
+				<a href="/rating" class="title">Shows</a>
+				&emsp;&emsp;&emsp;&emsp;
+				&emsp;&emsp;&emsp;&emsp;
+				&emsp;&emsp;&emsp;&emsp;
+				&emsp;&emsp;&emsp;&emsp;
+				&emsp;&emsp;&emsp;&emsp;
+				&emsp;&emsp;&emsp;&emsp;
+				&emsp;&emsp;&emsp;&emsp;
+				&emsp;&emsp;&emsp;&emsp;
+				&emsp;&emsp;&emsp;&emsp;
+				Abhimanshu Mishra, Sharvari Joshi, Aditya Bhagwat, Vinit Bhosale
+			</header>
+
+			<div id="wrapper">
+
+				
+				{% if not showdetails %}
+				<section id="main" class="wrapper">
+					<div class="inner">
+						<h2>Sentiment-based Reviews</h2>
+						<form action="" method="post" name="/">
+							{{ form.hidden_tag() }}
+							<div class="row uniform">
+								<div class="12u 12u$(xsmall)">
+									{{ form.min_score(size=14, placeholder='Minimum sentiment score (-1 to 1)') }}
+								</div>
+								<div class="12u$ 12u$(xsmall)">
+									{{ form.max_score(placeholder='Maximum sentiment score (-1 to 1)') }}
+								</div>
+								<div class="12u$ 12u$(xsmall)">
+									{{ form.num_reviews(placeholder='Number of reviews to show') }}
+								</div>
+								<div class="2u$ 12u$(xsmall)">
+									<input type="submit" value="Generate">
+								</div>
+							</div>
+						</form>
+					</div>
+				</section>
+				{% else %}
+				<section id="main" class="wrapper">
+					<div class="inner">
+						<h2>Sentiment-based Reviews</h2>
+						<form action="" method="post" name="/">
+							{{ form.hidden_tag() }}
+							<table border="1">
+							    <thead>
+							        <tr>
+							            {% for col in colnames %}
+							            <th>{{ col }}</th>
+							            {% endfor %}
+							        </tr>
+							    </thead>
+							    <tbody>
+							        {% for record in records %}
+							        <tr>
+							            {% for col in colnames %}
+							            <td>{{ record[col] }}</td>
+							            {% endfor %}
+							        </tr>
+							        {% endfor %}
+							    </tbody>
+							</table>
+						</form>
+					</div>
+				</section>
+				{% endif %}
+
+
+			</div>
+
+			<footer id="footer" class="wrapper alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Team Fire</a>, 2020. All rights reserved.</li>
+					</ul>
+				</div>
+			</footer>
+
+	</body>
+</html>
