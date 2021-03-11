@@ -1,9 +1,6 @@
 ### TV Shows Muster and Analysis
 
-<img src="https://img.shields.io/badge/author-Aditya%20Bhagwat-brightgreen">
-<img src="https://img.shields.io/badge/author-Vinit%20Bhosale-brightgreen">
-<img src="https://img.shields.io/badge/author-Sharvari%20Joshi-brightgreen">
-<img src="https://img.shields.io/badge/author-Abhimanshu%20Mishra-brightgreen">
+<img src="https://img.shields.io/badge/author-Aditya%20Bhagwat-brightgreen"><img src="https://img.shields.io/badge/author-Vinit%20Bhosale-brightgreen"><img src="https://img.shields.io/badge/author-Sharvari%20Joshi-brightgreen"><img src="https://img.shields.io/badge/author-Abhimanshu%20Mishra-brightgreen">
 
 
 ### What is it?
