@@ -14,7 +14,7 @@ Online entertainment has become a crucial part of life in the modern age. In rec
 
 ## To check our demo 
 
-Click here
+Click here -> <a href="https://team-fire-viz.herokuapp.com/"> </a>
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
